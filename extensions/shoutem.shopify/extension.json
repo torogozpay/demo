@@ -1,0 +1,286 @@
+{
+  "name": "shopify",
+  "title": "Shopify",
+  "version": "9.0.0",
+  "platform": ">=13",
+  "hidden": false,
+  "icon": "./server/assets/add-shopify-image.png",
+  "description": "Sell from your Shopify store",
+  "releaseNotes": "* Addressed stability issue regarding deprecated AppState listener and Android SDK deprecations, no user facing changes",
+  "nativeChanges": {
+    "lastVersion": "9.0.0"
+  },
+  "capabilities": ["shoutem.shopify.places-api"],
+  "i18n": {
+    "locale": "en",
+    "translationPath": "server/translations/en.json"
+  },
+  "extensionThemes": [
+    {
+      "name": "Theme",
+      "path": "server/themes/theme.json"
+    }
+  ],
+  "dependencies": [
+    "shoutem.application",
+    "shoutem.auth",
+    "shoutem.cms",
+    "shoutem.i18n",
+    "shoutem.layouts",
+    "shoutem.navigation",
+    "shoutem.notification-center",
+    "shoutem.redux"
+  ],
+  "categories": ["commerce"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoutem/extensions"
+  },
+  "shortcuts": [
+    {
+      "title": "Shop",
+      "description": "Show your products and let the users buy them",
+      "icon": "theme://cart.png",
+      "name": "openProducts",
+      "screen": "@.ProductsListScreen",
+      "adminPages": [
+        {
+          "page": "@.ShopifyPage",
+          "title": "Content"
+        },
+        {
+          "page": "shoutem.layouts.LayoutPage",
+          "title": "Layout"
+        }
+      ]
+    },
+    {
+      "title": "Order history",
+      "description": "Show customers their order history",
+      "icon": "theme://cart.png",
+      "name": "orderHistory",
+      "screen": "@.OrderHistoryScreen"
+    },
+    {
+      "title": "Delivery addresses",
+      "description": "Show Shopify customers their saved addresses",
+      "icon": "theme://delivery.png",
+      "name": "customerAddresses",
+      "screen": "@.CustomerAddressScreen"
+    }
+  ],
+  "screens": [
+    {
+      "name": "ProductsFeaturedTallGridScreen",
+      "title": "Tall Grid with Featured Product",
+      "image": "./server/assets/screens/featured-tall-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "tall-grid",
+        "hasFeaturedItem": true
+      }
+    },
+    {
+      "name": "ProductsTallGridScreen",
+      "title": "Tall Grid",
+      "image": "./server/assets/screens/tall-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "tall-grid",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "ProductsFeaturedGridScreen",
+      "title": "Square Grid with Featured Product",
+      "image": "./server/assets/screens/featured-square-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "square-grid",
+        "hasFeaturedItem": true
+      }
+    },
+    {
+      "name": "ProductsGridScreen",
+      "title": "Square Grid",
+      "image": "./server/assets/screens/square-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "square-grid",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "ProductsFeaturedListScreen",
+      "title": "List with Featured Product",
+      "image": "./server/assets/screens/featured-list.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "list",
+        "hasFeaturedItem": true
+      }
+    },
+    {
+      "name": "ProductsListScreen",
+      "title": "List",
+      "image": "./server/assets/screens/list.png",
+      "settings": {
+        "listType": "list",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "Grid122ProductsScreen",
+      "title": "1-2-2 pattern grid",
+      "image": "./server/assets/screens/1-2-2-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "1-2-2-grid",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "FixedGridProductsScreen",
+      "title": "Fixed grid",
+      "image": "./server/assets/screens/fixed-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "fixed-grid",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "FeaturedFixedGridProductsScreen",
+      "title": "Fixed grid with a featured item",
+      "image": "./server/assets/screens/grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "fixed-grid",
+        "hasFeaturedItem": true
+      }
+    },
+    {
+      "name": "MediumListProductsScreen",
+      "title": "Medium list",
+      "image": "./server/assets/screens/medium-list.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "medium-list",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "FeaturedMediumListProductsScreen",
+      "title": "Medium list with a featured item",
+      "image": "./server/assets/screens/medium-list-with-featured.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "medium-list",
+        "hasFeaturedItem": true
+      }
+    },
+    {
+      "name": "TileListProductsScreen",
+      "title": "Tile list",
+      "image": "./server/assets/screens/tile-list.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "tile-list",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "LargeListProductsScreen",
+      "title": "Large list",
+      "image": "./server/assets/screens/large-list.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "large-list",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "ProductDetailsScreen"
+    },
+    {
+      "name": "SearchProductsScreen"
+    },
+    {
+      "name": "CartScreen"
+    },
+    {
+      "name": "CheckoutScreen"
+    },
+    {
+      "name": "ShippingMethodScreen"
+    },
+    {
+      "name": "PaymentScreen"
+    },
+    {
+      "name": "OrderCompleteScreen"
+    },
+    {
+      "name": "WebCheckoutScreen"
+    },
+    {
+      "name": "BitcoinCheckoutScreen"
+    },
+    {
+      "name": "UpdateItemScreen"
+    },
+    {
+      "name": "SelectAddressScreen"
+    },
+    {
+      "name": "OrderHistoryScreen"
+    },
+    {
+      "name": "CustomerAddressScreen"
+    },
+    {
+      "name": "EditAddressScreen"
+    }
+  ],
+  "pages": [
+    {
+      "name": "ShopifyPage",
+      "type": "react-page"
+    },
+    {
+      "name": "ShopifySettingsPage",
+      "type": "react-page"
+    }
+  ],
+  "settings": {
+    "store": "",
+    "apiKey": "",
+    "discountCode": ""
+  },
+  "settingsPages": [
+    {
+      "page": "@.ShopifySettingsPage",
+      "title": "Settings"
+    },
+    {
+      "page": "shoutem.theme.ExtensionThemeSettingsPage",
+      "title": "Settings",
+      "categories": ["style"],
+      "parameters": {
+        "extensionTheme": "Theme"
+      }
+    }
+  ],
+  "dataSchemas": [
+    {
+      "name": "Shopify",
+      "path": "server/data-schemas/Shopify.json"
+    }
+  ],
+  "journeyTriggers": [
+    {
+      "id": "shoutem.shopify.abandoned-cart",
+      "name": "Abandoned cart (Shopify)"
+    }
+  ]
+}

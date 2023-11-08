@@ -1,0 +1,38 @@
+{
+  "name": "cms",
+  "version": "6.3.1",
+  "platform": ">=9.1.0",
+  "type": "system",
+  "title": "CMS",
+  "description": "Shoutem CMS extension provides the integration with the Shoutem CMS. Extensions using CMS extension are able to fetch data from CMS and use Shoutem CMS editor.",
+  "releaseNotes": "* Resolved rare error when navigating back from CMS content screens",
+  "nativeChanges": {
+    "lastVersion": "6.3.0"
+  },
+  "icon": "server/assets/add-cms-image.png",
+  "categories": ["content"],
+  "dependencies": [
+    "shoutem.application",
+    "shoutem.layouts",
+    "shoutem.i18n",
+    "shoutem.navigation",
+    "shoutem.permission",
+    "shoutem.redux"
+  ],
+  "i18n": {
+    "locale": "en",
+    "translationPath": "server/translations/en.json"
+  },
+  "pages": [
+    {
+      "name": "CmsPage",
+      "type": "native-component",
+      "path": "dummy.js"
+    },
+    {
+      "name": "LayoutSettingsPage",
+      "type": "native-component",
+      "path": "dummy.js"
+    }
+  ]
+}

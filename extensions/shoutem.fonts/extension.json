@@ -1,0 +1,39 @@
+{
+  "name": "fonts",
+  "version": "2.0.0",
+  "platform": ">=13.0.0",
+  "title": "Fonts",
+  "description": "View and manage fonts for the app",
+  "releaseNotes": "* Adjusted font download and linking method",
+  "icon": "server/assets/add-theme-image.png",
+  "categories": [],
+  "nativeChanges": {
+    "lastVersion": "2.0.0",
+    "settingsKeys": ["excludedFonts"]
+  },
+  "i18n": {
+    "locale": "en",
+    "translationPath": "server/translations/en.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoutem/extensions"
+  },
+  "dependencies": ["shoutem.application"],
+  "pages": [
+    {
+      "name": "FontsPage",
+      "type": "react-page"
+    }
+  ],
+  "settingsPages": [
+    {
+      "page": "@.FontsPage",
+      "title": "Fonts",
+      "categories": ["style"]
+    }
+  ],
+  "settings": {
+    "excludedFonts": []
+  }
+}

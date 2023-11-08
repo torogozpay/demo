@@ -1,0 +1,81 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/NotoSans-Bold.ttf",
+      "sha1": "c89f8a64c44bc31d8a90b26ab25fdbf9143da1bc"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/NotoSans-BoldItalic.ttf",
+      "sha1": "7ef67a9a4ce4a454f089b7140e5b62f21f539e13"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/NotoSans-Italic.ttf",
+      "sha1": "75bab79c4175a89a1dd422535d2cc6740f929424"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/NotoSans-Regular.ttf",
+      "sha1": "b74702e70a51c2e98a7c3330fe91cbd0267807c6"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/NotoSerif-Bold.ttf",
+      "sha1": "38c1f5e01974a512bade40ead62986276b259b77"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/NotoSerif-BoldItalic.ttf",
+      "sha1": "4bb864337d56ab13e16b0efcafb5ea0e33f405a4"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/NotoSerif-Italic.ttf",
+      "sha1": "df7aa075d0cd852144ccee8b5b9c698209411851"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/NotoSerif-Regular.ttf",
+      "sha1": "0fecf458cbd13781c71a985bd93e4d286a6a639e"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/Rubik-Bold.ttf",
+      "sha1": "9f54672df564a86c225e3f1142750d5e9a57d856"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/Rubik-BoldItalic.ttf",
+      "sha1": "d52546cd5ffa7ae186e2a7afa73ff4a4a5f80ba7"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/Rubik-Italic.ttf",
+      "sha1": "f41aa111751a055a0bf975111389102f7ae8c278"
+    },
+    {
+      "path": "extensions/shoutem.fonts/app/fonts/Rubik-Regular.ttf",
+      "sha1": "d96caac6b134872679a0daf731039a49b325b5e7"
+    },
+    {
+      "path": "node_modules/@shoutem/ui/fonts/rubicon-icon-font.ttf",
+      "sha1": "ee73c5c9d4f10611893a2d4812cd5f0eba585302"
+    },
+    {
+      "path": "node_modules/@shoutem/ui/fonts/Rubik-Black.ttf",
+      "sha1": "e49099b816d43eb108bfbd6ae6b94279e576622e"
+    },
+    {
+      "path": "node_modules/@shoutem/ui/fonts/Rubik-BlackItalic.ttf",
+      "sha1": "f84aeb4d613c7a466a02fb3162f50b6ebd880d6e"
+    },
+    {
+      "path": "node_modules/@shoutem/ui/fonts/Rubik-Light.ttf",
+      "sha1": "5347f7e98a347fa85dd42d4a429d83834b0728d4"
+    },
+    {
+      "path": "node_modules/@shoutem/ui/fonts/Rubik-LightItalic.ttf",
+      "sha1": "b2f7a3dfaf42da4d13cc1f4665685d5ea5c088f2"
+    },
+    {
+      "path": "node_modules/@shoutem/ui/fonts/Rubik-Medium.ttf",
+      "sha1": "65ed3520f61465ce8f7a15857deba7707370835c"
+    },
+    {
+      "path": "node_modules/@shoutem/ui/fonts/Rubik-MediumItalic.ttf",
+      "sha1": "ddf63e66f07aaf31b177a250c0c5b1cc4e255515"
+    }
+  ]
+}

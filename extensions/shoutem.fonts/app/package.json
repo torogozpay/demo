@@ -1,0 +1,10 @@
+{
+  "name": "shoutem.fonts",
+  "version": "2.0.0-build1693584773907",
+  "scripts": {
+    "prebuild": "node -e 'require(\"./build\").runPreBuild()'"
+  },
+  "assets": [
+    "/home/bruce/dev/torogoz/Shopify-app/extensions/shoutem.fonts/app/fonts"
+  ]
+}
